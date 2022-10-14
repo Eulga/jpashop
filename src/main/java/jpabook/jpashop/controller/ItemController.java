@@ -71,6 +71,7 @@ public class ItemController {
         return "items/updateItemForm";
     }
 
+    //간단하게 만든것이어서 세가지만 적용
     @PostMapping("/items/{itemId}/edit")
     public String updateItem(@PathVariable("itemId") Long itemId, @Valid @ModelAttribute("bookForm") BookForm bookForm, BindingResult result) {
 

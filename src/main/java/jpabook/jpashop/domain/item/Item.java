@@ -42,4 +42,11 @@ public abstract class Item {
         if (restStock < 0) throw new NotEnoughStockException("need more stock");
         this.stockQuantity = restStock;
     }
+
+    //==수정 로직==//
+    public void change(String name, int price, int stockQuantity) {
+        this.name = name;
+        this.price = price;
+        this.stockQuantity = stockQuantity;
+    }
 }
